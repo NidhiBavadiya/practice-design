@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --shimmer-color: #ddd;
+}
+
+$primary: #3A70B4;
+$primaryLight:#D9EAFF;
+$secondaryLight:#FFD6CC;
+$black: #000000;
+$white: #ffffff;
+$white1: #F2F2F7;
+$bodybg:#FFF6F3;
+$bodybg1:#E8F3FA;
+$darkgray : #52667B;
+$lightgray : #d8d8d8;
+$light-red: #ff9f81;
+$color1:#4c4c66;
+$color2: #326fb3;
+$color3: #9c9c9c;
+$color4:#7e7ba0;
+$color5: #DCDCDC;
+$color6: #EBEBEB;
+$color7: #D0D0D0;
+$color8: #4C4C66;
+$color9: #11263C;
+$svg-color: #7e8c9b;
+$rem: 8px;
+
+$globalWidth: 1340px;
+
+$mediaSizes: (
+  'xs': 320px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+$mediaSizes2: (
+  'xs': 320px,
+  'xsm': 380px,
+  'sm': 575.98px,
+  'md': 767.98px,
+  'lg': 991.98px,
+  'xl': 1199.98px,
+  'xxl': 1400px
+);
+
+$fw300:300;
+$fw400:400;
+$fw500:500;
+$fw600:600;
+$fw700:700;
+$fw800:800;
+
+// responsive class
+// Small tablets and large smartphones (landscape view)
+
+$screen-sm-max: 575px;
+// Small tablets 
+$screen-md-max: 767px;
+// Tablets and small desktops
+$screen-lg-max: 991px;
+// Semi Large tablets and desktops
+$screen-xll-max: 1024px;
+// Semi Large tablets and desktops
+$screen-xl-max: 1199px;
+// Large tablets and desktops
+$screen-xxl-max: 1399px;
+// Extra Large tablets and desktops
+$screen-xxxl-max: 1499px;
+// Extra Large tablets and desktops
+$screen-xxll-max: 1699px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Semi Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// large devices
+@mixin xll {
+  @media (max-width: #{$screen-xll-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+  @media (max-width: #{$screen-xxl-max}) {
+    @content;
+  }
+}
+
+// Double Extra large devices
+@mixin xxxl {
+  @media (max-width: #{$screen-xxxl-max}) {
+    @content;
+  }
+}
+
+// Double Extra large devices
+@mixin xxll {
+  @media (max-width: #{$screen-xxll-max}) {
+    @content;
+  }
+}
+
+//transition
+@mixin trans3 {
+  transition: 0.3s ease-in-out;
+}
+
+//flex-center
+@mixin all_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//flex start
+@mixin start {
+  display: flex;
+  align-items: left;
+  justify-content: start;
+}

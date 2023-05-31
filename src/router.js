@@ -5,7 +5,15 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'my-account',
-    component: () => import('@/view/MyAccount.vue'),
-  },]
+    path: '/lIP-network',
+    name: 'lIP-network',
+    component: () => import('@/view/lip-network/LIPNetwork.vue'),
+  },
+]
+  const router = new VueRouter({
+    mode: 'history',
+    base: '/',
+    routes
+  })
+
+export default router
