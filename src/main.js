@@ -12,6 +12,14 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
+//vue select
+import "vue-select/dist/vue-select.css";
+import vSelect from "vue-select";
+
+Vue.component("v-select", vSelect);
+
+
+
 Vue.config.productionTip = false
 
 new Vue({
